@@ -20,6 +20,7 @@ main{
 .logo{
   height: 15%;
   width: 100%;
+  padding-left: 30px;
 }
 .side-bar{
   background-color: #000000;
@@ -56,16 +57,20 @@ nav a img{
   width: 2.5rem;
 }
 .plus-playlist{
-  width:30px;
-  height: 30px;
+  width:26px;
+  height: 26px;
   background-color: grey;
   display: inline-block;
   position: relative;
 }
-.vertical-center small{
-  height: 20px;
-  line-height: 20px;
-  white-space: nowrap;
+.vertical-center{
+  display: flex;
+}
+.vertical-center p{
+  display: inline-block;
+  line-height: 30px;
+  align-self: center;
+  margin-left: 3px;
 }
 .plus-playlist i{
   color: black;
@@ -184,6 +189,7 @@ nav a img{
   margin: 20px 20px;
   color: #777;
   padding: 10px;
+  cursor: pointer;
 }
 #section-1 a:hover{
   border-bottom:1px solid lightgreen;
@@ -203,8 +209,11 @@ nav a img{
 }
 #section-2 img{
   width: 100%;
-
-
+  opacity: 1;
+  transition: 0.5s;
+}
+#section-2 img:hover{
+  opacity:0.5;
 }
 #section-2 div{
   width: 180px;
@@ -235,8 +244,11 @@ nav a img{
 }
 #section-3 img{
   width: 100%;
-
-
+  opacity:1;
+  transition: 0.5s;
+}
+#section-3 img:hover{
+  opacity:0.5;
 }
 .titolo p{
   color: #777;
@@ -264,14 +276,16 @@ nav a img{
   margin:15px 10px;
 
 }
+
 #section-4 img{
+
   width: 100%;
   border-radius: 50%;
   opacity: 1;
-  transition: 5s;
+  transition: 0.5s;
 }
 #section-4 img:hover{
-  color: grey;
+  opacity:0.5;
 }
 #section-4 div h4{
   color: white;
@@ -282,4 +296,21 @@ nav a img{
   color: #777;
   text-align: center;
   font-size: 15px;
+}
+.music-player{
+  display: flex;
+  justify-content: space-between;
+}
+.cover-part > *{
+  display: inline-block;
+
+
+}
+.cover-part{
+
+}
+.cover-part img{
+  width: 50px;
+  height: 50px;
+
 }
