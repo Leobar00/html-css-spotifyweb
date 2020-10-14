@@ -37,7 +37,7 @@ nav{
 nav a {
   font-size: 1.5rem;
   display: block;
-  color:#a3a3a3;
+  color:#777;
   font-size: 1.5rem;
   margin-right: 10px;
   padding-left: 3rem;
@@ -124,7 +124,7 @@ nav a img{
 .menu-side-bar-bottom{
   height: calc(100% - 100px - 300px - 100px);
   width: 100%;
-  color:#a3a3a3;
+  color:#777;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -135,8 +135,8 @@ nav a img{
 }
 .menu-side-bar-bottom .grey-line{
   width: 70%;
-  color:#a3a3a3;
-  border: 1px solid #a3a3a3;
+  color:#777;
+  border: 1px solid #777;
   display: inline-block;
   margin-left:  30px;
 
@@ -156,16 +156,118 @@ nav a img{
   margin-left: 5px;
   color: white;
 }
+.main-window img:hover{
+  color: rgba(186,186,186,0.52);;
+}
 #section-1{
   display: flex;
   align-items: center;
   justify-content: center;
-  color:  #a3a3a3;
   flex-wrap: wrap;
 
 
 }
-#section-1 h4{
+#section-1 a{
   font-size: 12px;
-  margin: 0 10px;
+  margin: 20px 20px;
+  color: #777;
+  padding: 10px;
+}
+#section-1 a:hover{
+  border-bottom:1px solid lightgreen;
+  text-decoration: none;
+
+}
+#section-2{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.titolo{
+  color: white;
+  font-weight: 600;
+
+}
+#section-2 img{
+  width: 100%;
+
+
+}
+#section-2 div{
+  width: 180px;
+  margin:15px 10px;
+
+}
+#section-2 div h4{
+  color: white;
+  font-weight: 600;
+  text-align: center;
+}
+#section-2 div p{
+  color: #777;
+  text-align: center;
+  font-size: 15px;
+}
+#section-3{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+
+}
+#section-3 div{
+  width: 180px;
+  margin:15px 10px;
+
+}
+#section-3 img{
+  width: 100%;
+
+
+}
+.titolo p{
+  color: #777;
+  font-size: 13px;
+}
+#section-3 div h4{
+  color: white;
+  font-weight: 600;
+  text-align: center;
+}
+#section-3 div p{
+  color: #777;
+  text-align: center;
+  font-size: 15px;
+}
+#section-4{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+
+}
+#section-4 div{
+  width: 180px;
+  margin:15px 10px;
+
+}
+#section-4 img{
+  width: 100%;
+  border-radius: 50%;
+  opacity: 1;
+  transition: 5s;
+}
+#section-4 img:hover{
+  color: grey;
+}
+#section-4 div h4{
+  color: white;
+  font-weight: 600;
+  text-align: center;
+}
+#section-4 div p{
+  color: #777;
+  text-align: center;
+  font-size: 15px;
 }
