@@ -330,7 +330,7 @@ nav a img{
 }
 
 .cover-part{
-  width: 200px;
+  width: 190px;
   height: 100%;
   flex-shrink: 0;
 }
@@ -385,7 +385,7 @@ nav a img{
   display: inline;
 }
 .tool-player{
-  width: 200px;
+  width: 160px;
   height: 100%;
   flex-shrink: 0;
   line-height: 100px;
@@ -432,7 +432,13 @@ i:hover{
 .fa-heart-o:hover{
   color:red;
 }
+.main-window .scale-img:hover{
+  transform: scale(1.2);
+}
 @media screen and (max-width:768px) {
+  body{
+    font-size: 15px;
+  }
   .side-bar{
     width: 80px;
   }
