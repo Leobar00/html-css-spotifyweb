@@ -98,6 +98,9 @@ nav a img{
   width: 100%;
   height: 100px;
   background-color: #282828;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
 }
 .top-window{
   background-color: rgba(8, 11, 18, 0.6);
@@ -188,12 +191,13 @@ nav a img{
   font-size: 12px;
   margin: 20px 20px;
   color: #777;
-  padding: 10px;
+  padding: 5px;
   cursor: pointer;
 }
 #section-1 a:hover{
   border-bottom:1px solid lightgreen;
   text-decoration: none;
+  border-bottom-width:2px;
 
 }
 #section-2{
@@ -207,10 +211,18 @@ nav a img{
   font-weight: 600;
 
 }
+.hover:hover{
+  opacity: 1;
+  background-image: url("../img/player.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+}
+
 #section-2 img{
   width: 100%;
   opacity: 1;
-  transition: 0.5s;
+  transition: 0.4s;
 }
 #section-2 img:hover{
   opacity:0.5;
@@ -242,10 +254,11 @@ nav a img{
   margin:15px 10px;
 
 }
+
 #section-3 img{
   width: 100%;
   opacity:1;
-  transition: 0.5s;
+  transition: 0.4s;
 }
 #section-3 img:hover{
   opacity:0.5;
@@ -297,20 +310,91 @@ nav a img{
   text-align: center;
   font-size: 15px;
 }
-.music-player{
-  display: flex;
-  justify-content: space-between;
-}
+
 .cover-part > *{
   display: inline-block;
-
+  line-height: 80px;
+  color: #777;
 
 }
 .cover-part{
-
+  width: 300px;
+  height: 100%;
+  flex-shrink: 0;
 }
 .cover-part img{
   width: 50px;
   height: 50px;
 
+}
+.song-player{
+  width: 40%;
+  min-width: 300px;
+}
+.song-player-top{
+  width: 500px;
+  height: 50%;
+  display: inline-block;
+  text-align: center;
+}
+.song-player-top > *{
+  margin: 15px;
+  color: white;
+  font-size: 25px;
+
+}
+.song-player-top .fa-play-circle-o{
+  font-size: 40px;
+}
+.song-player-bottom{
+  width: 500px;
+  height: 40%;
+  display: inline-block;
+  text-align:center;
+}
+.song-player-bottom .song-player-bottom-cont{
+  width: 80%;
+}
+.song-player-bottom div span{
+
+}
+.song-player-bottom > *{
+  display: inline;
+}
+.tool-player{
+  width: 200px;
+  height: 100%;
+  flex-shrink: 0;
+  line-height: 100px;
+  color: white;
+  font-size: 15px;
+
+}
+.tool-player i{
+  padding: 5px;
+}
+.music-sound{
+  width: 100px;
+  border: 1px solid #777;
+  background-color: #777;
+  border-radius: 3px;
+  display: inline-block;
+  margin-bottom: 3px;
+  margin-left: 5px;
+}
+.white-sound{
+  width: 30px;
+  border: 2px solid white;
+}
+.music-bar{
+  width: 400px;
+  border: 1px solid #777;
+  background-color: #777;
+  border-radius: 3px;
+  display: inline-block;
+
+}
+.white-bar{
+  width: 60px;
+  border: 2px solid white;
 }
