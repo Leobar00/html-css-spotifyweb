@@ -16,9 +16,20 @@
 
     <main>
       <section class="side-bar">
-
         <nav>
-            <div class="side-bar-header">
+            <!-- parte visibile solo con xs -->
+            <div class="visible-xs top-bar-xs flex-center">
+              <img src="img/logo-small.svg" class="back-favicon"alt="Spotify"><br>
+              <img src="img/home.svg" alt="icon-home"><br>
+              <img src="img/search.svg" alt="icon-search"><br>
+              <img src="img/libreria.svg" alt="icon-library">
+
+            </div>
+            <div class="visible-xs bottom-bar-xs flex-center">
+              <i class="fa fa-arrow-circle-o-down" arihidden="true"></i>
+              <img src="img/profile.svg" class="img-stranger"alt="">
+            </div>
+            <div class="side-bar-header  hidden-xs">
 
               <div class="logo">
                 <img src="img/logo.svg" alt="Logo Spotify">
@@ -47,7 +58,7 @@
             </div>
 
 
-            <div class="menu-side-bar-bottom">
+            <div class="menu-side-bar-bottom hidden-xs ">
               <small><i class="fa fa-arrow-circle-o-down" arihidden="true"></i> Installa app</small>
               <div class="grey-line"></div>
               <img src="img/profile.svg" class="img-stranger"alt="">
@@ -177,11 +188,27 @@
       </section>
       <section class="music-player">
         <div class="cover-part">
-          <img src="img/sinister.jpeg" alt="">
-          <h4>Sinister</h4>
-          <h5>Brano nome</h5>
-          <i class="fa fa-heart-o" aria-hidden="true"></i>
-          <i class="fa fa-envelope-open-o" aria-hidden="true"></i>
+          <div class="image-cover">
+
+            <img src="img/sinister.jpeg" alt="">
+          </div>
+          <div class="line-break">
+            <span>
+              <h4>Sinister</h4>
+            </span>
+            <span>
+              <h5>Brano nome</h5>
+            </span>
+          </div>
+          <div class="line-break">
+
+            <i class="fa fa-heart-o" aria-hidden="true"></i>
+          </div>
+          <div class="line-break">
+
+            <i class="fa fa-envelope-open-o" aria-hidden="true"></i>
+          </div>
+
         </div>
         <div class="song-player">
           <div class="song-player-top">
@@ -192,11 +219,11 @@
             <i class="fa fa-repeat" aria-hidden="true"></i>
           </div><br>
           <div class="song-player-bottom">
-            <div class="">
+            <div class="song-player-bottom-cont">
               <span>0:25</span>
               <div class="music-bar"><div class="white-bar">
               </div></div>
-              <span>0:25</span>
+              <span>4:35</span>
 
 
             </div>
