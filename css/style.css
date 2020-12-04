@@ -166,7 +166,7 @@ nav a img{
 
 }
 .img-stranger {
-  background-color: grey;
+  background-color: black;
   width: 22px;
   height: 22px;
   border-radius: 50%;
@@ -361,12 +361,12 @@ nav a img{
 }
 .song-player-top > *{
   margin: 15px;
-  color: white;
-  font-size: 25px;
+  color:#777 ;
+  font-size: 20px;
 
 }
 .song-player-top .fa-play-circle-o{
-  font-size: 40px;
+  font-size: 33px;
 }
 .song-player-bottom{
   width: 100%;
@@ -389,7 +389,7 @@ nav a img{
   height: 100%;
   flex-shrink: 0;
   line-height: 100px;
-  color: white;
+  color:#777;
   font-size: 15px;
 
 }
@@ -399,6 +399,7 @@ nav a img{
 .tool-player i{
   width: 10%;
   padding-right: 10px;
+  margin-right: 2px;
 }
 .music-sound{
   width: 80px;
@@ -426,7 +427,8 @@ nav a img{
   border: 2px solid white;
 }
 i:hover{
-  opacity: 0.6;
+  opacity: 0.8;
+  color:white;
   cursor: pointer;
 }
 .fa-heart-o:hover{
@@ -434,6 +436,9 @@ i:hover{
 }
 .main-window .scale-img:hover{
   transform: scale(1.2);
+}
+.bg-green{
+  background-color: lightgreen;
 }
 @media screen and (max-width:768px) {
   body{
@@ -471,8 +476,10 @@ i:hover{
     margin-top: 10px;
     opacity: 1;
 
+
   }
   .flex-center > *:hover{
     opacity:0.6;
+
   }
 }
